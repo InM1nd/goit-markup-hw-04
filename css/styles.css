@@ -179,7 +179,7 @@ img {
 .hero {
 	padding: 200px 0;
 	background-image: linear-gradient(var(--background-color), var(--background-color)),
-	url("/img/backgrounds/hero.jpg");
+	url("../img/backgrounds/hero.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
