@@ -47,7 +47,7 @@ body {
 }
 
 
-.link {
+a {
   text-decoration: none;
 }
 
@@ -179,7 +179,7 @@ img {
 .hero {
 	padding: 200px 0;
 	background-image: linear-gradient(var(--background-color), var(--background-color)),
-	url("/img/bgr.jpg");
+	url("/img/backgrounds/hero.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -252,12 +252,8 @@ img {
 	background-size: auto;
 	background-repeat: no-repeat;
 	justify-content: center;
+	padding: 25px 0;
 }
-
-.advantage-icon{
-	margin: 25px 0;
-}
-
 
 
 .card-title {
@@ -338,8 +334,8 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--text-color);
 
-padding-top: 10px;
-padding-bottom: 16px;
+margin-top: 10px;
+margin-bottom: 16px;
 }
 .team-list .team-item:not(:last-child) {
   margin-right: 30px;
@@ -396,27 +392,26 @@ padding-bottom: 16px;
 
 .clients-list{
 	display: flex;
-	justify-content: center;
 }
 
-.clients-item{
-	width: 170px;
-}
 
-.clients-fill{
+.clients-card{
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	border: 1px solid #AFB1B8;
 	box-sizing: border-box;
 	border-radius: 4px;
 	background-size: auto;
 	background-repeat: no-repeat;
-	justify-content: center;
+
+	width: 170px;
+	height: 92px;
 	
 }
 
 
 .clients-icon{
-	margin: 16px 0;
 	fill: #AFB1B8;
 
 }
@@ -425,14 +420,15 @@ padding-bottom: 16px;
 	margin-right: 30px;
  }
 
- .clients-fill:hover,
- .clients-fill:focus{
+ .clients-card:hover,
+ .clients-card:focus{
 	 border-color: var(--accent-color);
  }
 
-.clients-item:hover .clients-icon,
-.clients-item:focus .clients-icon{
+.clients-card:hover .clients-icon,
+.clients-card:focus .clients-icon{
 	fill: var(--accent-color);
+	border-color: var(--accent-color);
 }
 
 /* Portfolio */
@@ -501,26 +497,32 @@ padding-bottom: 16px;
   margin-top: -30px;
   
 }
-.filter-card {
-  background: #ffffff;
-  box-sizing: border-box;
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 90px) / 3);
+.filter-card{
+	border: 1px solid #eeeeee;
+	background: #ffffff;
+	box-sizing: border-box;
+	margin-left: 30px;
+	margin-top: 30px;
+	flex-basis: calc(100% / 3 - 30px);
+}
+
+.filter-link{
+	display: block;
 }
 
 .filter-fill {
 	padding: 24px 25px;
-	border: 1px solid #eeeeee;
  }
 
-.filter-card:hover{
+
+.filter-link:hover ,
+.filter-link:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
 	0px 4px 4px rgba(0, 0, 0, 0.06), 
 	1px 4px 6px rgba(0, 0, 0, 0.16);
 }	
 
-
+	
 .filter-header{
 	font-weight: 700;
 	font-size: 18px;
@@ -546,6 +548,7 @@ padding-bottom: 16px;
 
 .footer-container{
 	display: flex;
+	align-items: baseline;
 }
 
 .footer-left{
@@ -592,7 +595,7 @@ padding-bottom: 16px;
 
 	color: #FFFFFF;
 
-	padding-bottom: 20px;
+	margin-bottom: 20px;
  }
 
  .social-list-footer{
